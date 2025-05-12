@@ -1,3 +1,4 @@
+
 const display = document.querySelector("#display");
 
 function appendToDisplay(input){
@@ -13,7 +14,6 @@ function calculate(){
     }
 
 }
-
 function clearDisplay(){
     display.value = "";
     
