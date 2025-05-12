@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  
+
   <script>
     function appendToDisplay(value) {
       const display = document.getElementById('display');
@@ -33,61 +33,76 @@
 
   <div
     class=" flex bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] w-screen h-screen  justify-center items-center ">
-    
     <div class=" bg-[#110430] opacity-57 w-[600px] h-[590px] p-9 rounded-[50px] scale-80 sm:h-[650px]">
       <input
         class=" block w-full font-mono font-bold float-right text-white text-right outline-none text-[75px] p-2 h-[100px] bg-[#17063e] rounded-[20px]"
         id="display" type="text">
 
       <div class=" grid mt-[120px] grid-cols-4 gap-[20px] p-1  ">
-        <button class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
+        <button
+          class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
           id="operator-btn" onclick="appendToDisplay('+')"> + </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('7')"> 7 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('8')"> 8 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('9')"> 9 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
           id="operator-btn" onclick="appendToDisplay('-')"> - </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('4')"> 4 </button>
-        <button class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('5')"> 5 </button>
-        <button class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('6')"> 6 </button>
-        <button class=" w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
+        <button
+          class=" w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
           id="operator-btn" onclick="appendToDisplay('*')"> * </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('1')"> 1 </button>
-        <button class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px] rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('2')"> 2 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('3')"> 3 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[45px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[45px] bg-[#164f45] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#0f322c] "
           id="operator-btn" onclick="appendToDisplay('/')"> / </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center  sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center  sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('0')"> 0 </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="appendToDisplay('.')"> . </button>
-        <button class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
+        <button
+          class="  w-[80px] h-[60px]  rounded-[20px] text-white text-[50px] bg-[#2e1a5c] flex justify-center items-center sm:w-[110px] sm:h-[70px] hover:bg-[#2a0c3d] "
           onclick="calculate()"> = </button>
-        <button class="  w-[120px] h-[60px] rounded-[20px] text-white text-[40px] bg-[#164f45] flex justify-center items-center sm:w-[130px] sm:h-[70px] hover:bg-[#0f322c] "
+        <button
+          class="  w-[120px] h-[60px] rounded-[20px] text-white text-[40px] bg-[#164f45] flex justify-center items-center sm:w-[130px] sm:h-[70px] hover:bg-[#0f322c] "
           id="operator-btn" onclick="clearDisplay()"> Clear </button>
-
       </div>
     </div>
   </div>
-  <footer class= "bg-[#1f062e] text-white py-8">
-<div class="container mx-auto text-center">
-<div class="mb-4">
-<a href="https://www.facebook.com/itseuri.somada" class="mx-2 text-gray-400 hover:text-white">Facebook</a>
-<a href="https://github.com/Somada-yur3k" class="mx-2 text-gray-400 hover:text-white">GitHub</a>
+  <footer class="bg-[#1f062e] text-white py-8">
+    <div class="container mx-auto text-center">
+      <div class="mb-4">
+        <a href="https://www.facebook.com/itseuri.somada" class="mx-2 text-gray-400 hover:text-white">Facebook</a>
+        <a href="https://github.com/Somada-yur3k" class="mx-2 text-gray-400 hover:text-white">GitHub</a>
 
-</div>
-<p>© 2025 Eurika adamos. All rights reserved.</p>
-</div>
-</footer>
+      </div>
+      <p>© 2025 Eurika adamos. All rights reserved.</p>
+    </div>
+  </footer>
 
 
 </body>
